@@ -1,0 +1,78 @@
+[
+    {
+      "title": "Rtx 4090",
+      "description": "GIGABYTE Geforce Rtx 4090 Windforce V2 24G Nvidia 24 Gb Gddr6X",
+      "price": 3000,
+      "image": "https://www.worten.pt/i/3aa432174d6f06156ff9e6a31b44266bcaa030fd"
+    },{
+      "title": "RTX3060",
+      "description": "Відеокарта ASUS DUAL-RTX3060-O12G-V2 (NVIDIA - 12 ГБ DDR6)",
+      "price": 330,
+      "image": "https://www.worten.pt/i/8cc8f01cc31d7f88151340192e60947cc3d1ea16"
+    },{
+      "title": "Rtx 4080 Super",
+      "description": "Відеокарта PNY Nvd Rtx 4080 Super 16 Гб",
+      "price": 1417,
+      "image": "https://www.worten.pt/i/046480a76ee9920085b1f15823fb0ae400631de9"
+    },{
+      "title": "RTX 8000",
+      "description": "Відеокарта PNY Quadro RTX 8000 (NVIDIA - 48 ГБ GDDR6)",
+      "price": 8937,
+      "image": "https://www.worten.pt/i/35ac358dfb1bbaf9669aa57ea087563e4c58d929"
+    },{
+      "title": "GT 730",
+      "description": "Відеокарта ASUS GeForce GT 730 (NVIDIA - 2 ГБ DDR5)",
+      "price": 79,
+      "image": "https://www.worten.pt/i/9f061817b131150b543e178ef376b1c105bd84c9"
+    },{
+      "title": "RTX 3060",
+      "description": "Відеокарта ASUS TUF Gaming GeForce RTX 3060 OC V2 12 ГБ GDDR6",
+      "price": 421,
+      "image": "https://www.worten.pt/i/48b22577eafa937e77b47ee5dd9386a898939206"
+    },{
+      "title": "RTX 2060 Turbo",
+      "description": "Відеокарта ASUS RTX 2060 Turbo (NVIDIA - 6 ГБ DDR6)",
+      "price": 1119,
+      "image": "https://www.worten.pt/i/a00a30b8c0c053c95aaa44a834212c1c7f1fb7e4"
+    },{
+      "title": "GTX 1660 SUPER",
+      "description": "Відеокарта MSI GeForce GTX 1660 SUPER Ventus (NVIDIA - 6 ГБ DDR6)",
+      "price": 298,
+      "image": "https://www.worten.pt/i/0d54aa22bed018255d2ae75f88a3d6325adf8c21"
+    },{
+      "title": "Rtx 4060",
+      "description": "Відеокарта MSI Geforce Rtx 4060 Ventus 2X Black 8G Oc Nvidia Video Card 8 Gb Gddr6",
+      "price": 337,
+      "image": "https://www.worten.pt/i/cb65d4f524ab650a1b9d92a7fd72a641c8198478"
+    },{
+      "title": "GT 1030",
+      "description": "Відеокарта ASUS GeForce GT 1030 (NVIDIA - 2 ГБ DDR5)",
+      "price": 100,
+      "image": "https://www.worten.pt/i/5f7e76f36454cac2dcfc7678a52fd18b8eab9075"
+    },{
+      "title": "GT 1030 ",
+      "description": "Відеокарта ASUS GeForce GT 1030 (NVIDIA - 2 ГБ DDR5)",
+      "price": 114,
+      "image": "https://www.worten.pt/i/3085cb228846cff113258c28724c8e01d5f4915f"
+    },{
+      "title": "Rtx 4070 Super",
+      "description": "Відеокарта ASUS Rtx 4070 Super Gddr6X",
+      "price": 840,
+      "image": "https://www.worten.pt/i/af7468293e196443a0459ad36f85aa8001ad8632"
+    },{
+      "title": "RTX 3070",
+      "description": "Відеокарта ASUS GeForce RTX 3070 (NVIDIA - 8 ГБ GDDR6)",
+      "price": 760,
+      "image": "https://www.worten.pt/i/cc3ed173c0cb77dc1dd6ebc3ec575b287d55fe67"
+    },{
+      "title": "Rtx 4060",
+      "description": "Відеокарта GIGABYTE Geforce Rtx 4060 Windforce Oc 8G Nvidia 8 Gb Gddr6",
+      "price": 347,
+      "image": "https://www.worten.pt/i/bac0c4a63f666ea672dc4ff83b27543ec424fd64"
+    },{
+      "title": "Rtx 4060",
+      "description": "Відеокарта GIGABYTE Geforce Rtx 4060 Eagle Oc 8G Nvidia 8 Gb Gddr6",
+      "price": 356,
+      "image": "https://www.worten.pt/i/e2898dbfb0f07b854b20d48d533d04c69d45dc51"
+    }
+  ]

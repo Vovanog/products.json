@@ -1,5 +1,9 @@
 body {
     background-color: #f8f9fa;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
   }
   
   h1 {
@@ -15,3 +19,12 @@ body {
     height: 200px;
     object-fit: cover;
   }
+  :root {
+    --background-color: white;
+    --text-color: black;
+}
+
+.dark-theme {
+    --background-color: #121212;
+    --text-color: white;
+}

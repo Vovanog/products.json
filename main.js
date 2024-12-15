@@ -1,27 +1,32 @@
-// Завантаження JSON-даних
-fetch('products.json')
-  .then(response => response.json())
-  .then(products => {
-    // Контейнер для карток
-    const container = document.getElementById('card-row');
+function getProductHtml(product) {
+  return `
+    <div class="card" style="width: 18rem;">
+    <img src=${product.image} class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${product.title}</h5>
+      <p class="card-text">${product.description}</p>
+      <a href="#" class="btn btn-primary">${product.price}$</a>
+    </div>
+  </div>
+  `
+}
 
-    // Генерація карток
-    products.forEach(product => {
-      const card = document.createElement('div');
-      card.classList.add('col-md-4', 'mb-4');
+async function getProducts() {
+  const response = await fetch('products.json')
+  return await response.json()
+}
 
-      card.innerHTML = `
-        <div class="card h-100">
-          <img src="${product.image}" class="card-img-top" alt="${product.title}">
-          <div class="card-body">
-            <h5 class="card-title">${product.title}</h5>
-            <p class="card-text">${product.description}</p>
-            <p class="card-text"><strong>Ціна: $${product.price}</strong></p>
-          </div>
-        </div>
-      `;
+getProducts().then(function (products) {
+  const productsContainer = document.querySelector('.catalog')
 
-      container.appendChild(card);
-    });
-  })
-  .catch(error => console.error('Помилка завантаження даних:', error));
+  if (products) {
+    products.forEach(function (product) {
+      productsContainer.innerHTML += getProductHtml(product)
+    })
+  }
+})
+const themeToggle = document.getElementById('themeToggle');
+const body = document.querySelector("body")
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+});

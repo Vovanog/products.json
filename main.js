@@ -8,7 +8,7 @@ function getProductHtml(product) {
       <a href="#" class="btn btn-primary">${product.price}$</a>
 
 <button class="button cart-btn"  data-product='${JSON.stringify(product)}'>
- b
+ buy
 </button>
 
     </div>

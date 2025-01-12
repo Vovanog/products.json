@@ -12,56 +12,85 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="css/slider.css">
 </head>
+<style>
+  .cart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .cart-summary {
+    font-size: 1.25rem;
+  }
+
+  .navbar, .footer {
+    background-color: #1f1f1f;
+  }
+
+  .navbar .nav-link, .navbar-brand, .footer a {
+    color: #e0e0e0;
+  }
+
+  .navbar .nav-link:hover, .navbar-brand:hover, .footer a:hover {
+    color: #00bcd4;
+  }
+
+  .card {
+    border-radius: 12px;
+    border: 1px solid #333;
+    background-color: #1e1e2c;
+    color: #e0e0e0;
+  }
+
+  .card .remove-item-btn {
+    background-color: #f44336;
+    border: none;
+  }
+
+  .card .remove-item-btn:hover {
+    background-color: #d32f2f;
+  }
+
+  .card-title {
+    color: #ffffff;
+  }
+</style>
 <body class="dark-theme">
-  <h1 class="text-center mt-4">Cyber Cutlet</h1>
-  
-  <!-- Контейнер для карток -->
-  <div id="products-container" class="container mt-4">
-    <div class="row" id="card-row"></div>
-  </div>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">cart</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">Cyber Cutlet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html#">Головна</a></li>
+            <li class="nav-item"><a class="nav-link" href="cart.html">Кошик</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#comparison-table">Порівняння</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="my-5">
+    <div class="container">
+      <!-- Заголовок корзины -->
+      <h2 class="text-center mb-4">Кошик</h2>
+
+      <!-- Контейнер для элементов корзины -->
+      <div class="cart-container row row-cols-1 g-4"></div>
+
+      <!-- Итоги корзины -->
+      <div class="cart-summary mt-4 text-end">
+        <h4 class="fw-bold">Загальна сума: <span id="cart-total">0</span> $</h4>
+        <button class="btn btn-success btn-lg mt-2">Оформити замовлення</button>
       </div>
     </div>
-  </nav>
-  <label class="switch" >
-    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
-    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
-    <input type="checkbox" class="input">
-    <span class="slider" id="themeToggle"></span>
-  </label>
-  <main><div class="cart-container"></div></main>
+  </main>
 <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

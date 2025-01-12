@@ -1,20 +1,5 @@
 [
-    {
-      "title": "Rtx 4090",
-      "description": "GIGABYTE Geforce Rtx 4090 Windforce V2 24G Nvidia 24 Gb Gddr6X",
-      "price": 3000,
-      "image": "https://www.worten.pt/i/3aa432174d6f06156ff9e6a31b44266bcaa030fd"
-    },{
-      "title": "RTX3060",
-      "description": "Відеокарта ASUS DUAL-RTX3060-O12G-V2 (NVIDIA - 12 ГБ DDR6)",
-      "price": 330,
-      "image": "https://www.worten.pt/i/8cc8f01cc31d7f88151340192e60947cc3d1ea16"
-    },{
-      "title": "Rtx 4080 Super",
-      "description": "Відеокарта PNY Nvd Rtx 4080 Super 16 Гб",
-      "price": 1417,
-      "image": "https://www.worten.pt/i/046480a76ee9920085b1f15823fb0ae400631de9"
-    },{
+  {
       "title": "RTX 8000",
       "description": "Відеокарта PNY Quadro RTX 8000 (NVIDIA - 48 ГБ GDDR6)",
       "price": 8937,
